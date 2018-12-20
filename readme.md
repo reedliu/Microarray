@@ -30,5 +30,6 @@
 
 ### Most famous - Affymetrix
 
-![image-20181220094733187](/Users/reedliu1/Downloads/2.png)
+![4.png](https://upload-images.jianshu.io/upload_images/9376801-801df7f790b70522.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
