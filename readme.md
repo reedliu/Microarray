@@ -79,7 +79,6 @@
 ### Most famous - Affymetrix
 ![2.png](https://upload-images.jianshu.io/upload_images/9376801-466924b530637573.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
 #### U133 chip
 
 - HG U133A genechip represents more than 22,000 full length genes and EST clusters
