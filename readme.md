@@ -45,14 +45,9 @@
 
 ### About technology and design
 
-<<<<<<< HEAD
-![image-20181220093604849](https://github.com/reedliu/PicBed/blob/master/microarray/1.png)
-=======
 ![1.png](https://upload-images.jianshu.io/upload_images/9376801-d34fc2a99b777601.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![3.png](https://upload-images.jianshu.io/upload_images/9376801-8a8553ee72af09dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
->>>>>>> add content
-
 - Collection of DNA spot on a solid surface
 - Each spot contains many copies of the same DNA sequence ("probes")
   [probes are designed to target specific genes]
@@ -82,11 +77,6 @@
 ---
 
 ### Most famous - Affymetrix
-
-<<<<<<< HEAD
-![4.png](https://upload-images.jianshu.io/upload_images/9376801-801df7f790b70522.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-=======
 ![2.png](https://upload-images.jianshu.io/upload_images/9376801-22b32206524ffae1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### U133 chip
@@ -182,8 +172,6 @@ Loess (lowess): locally weighted scatterplot smoothing [to fit a smooth curve be
 Background error models: **RMA( Robust Multi-array Average**) 
 Model fitting: Median Polish
 
-
-
 > Also, the MA plot and background error models (e.g. RMA) are popular in other microarrays, ChIP-seq, RNA-seq
 
 #### Third: Between array
@@ -239,5 +227,4 @@ http://www.bioconductor.org/docs/workflows/oligoarrays/
 - Illumina bead arrays => **beadarray, lumi**
 
 
->>>>>>> add content
 
