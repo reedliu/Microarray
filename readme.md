@@ -47,7 +47,7 @@
 
 ![1.png](https://upload-images.jianshu.io/upload_images/9376801-d34fc2a99b777601.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![3.png](https://upload-images.jianshu.io/upload_images/9376801-8a8553ee72af09dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![3.png](https://upload-images.jianshu.io/upload_images/9376801-44c4e9dc60a0d213.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 - Collection of DNA spot on a solid surface
 - Each spot contains many copies of the same DNA sequence ("probes")
   [probes are designed to target specific genes]
