@@ -77,7 +77,8 @@
 ---
 
 ### Most famous - Affymetrix
-![2.png](https://upload-images.jianshu.io/upload_images/9376801-22b32206524ffae1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![2.png](https://upload-images.jianshu.io/upload_images/9376801-466924b530637573.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 #### U133 chip
 
