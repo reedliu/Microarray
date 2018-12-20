@@ -11,7 +11,7 @@
 
 ### About technology and design
 
-![image-20181220093604849](/Users/reedliu1/Downloads/1.png)
+![image-20181220093604849](https://github.com/reedliu/PicBed/blob/master/microarray/1.png)
 
 - Collection of DNA spot on a solid surface
 - Each spot contains many copies of the same DNA sequence ("probes")
