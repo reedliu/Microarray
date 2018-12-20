@@ -1,4 +1,4 @@
-# Introduction to mRNA microarray
+# Introduction to mRNA Microarray
 
 > **Creator:** Yunze Liu (Reed)  CAAS/AGIS/SDAU
 >
