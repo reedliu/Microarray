@@ -5,7 +5,7 @@ library(stringr)
 library(ggplot2)
 
 ## 读取数据
-exp =rio::import("CBX6.xlsx")
+exp =rio::import("test.xlsx")
 exp = exp[,!stringr::str_detect(colnames(exp),"Average")]
 exp = exp[,!stringr::str_detect(colnames(exp),"Ratio")]
 rownames(exp) = exp$TargetID
@@ -15,9 +15,9 @@ exp = exp[apply(exp, 1, sum) > 0 ,]
 
 ## limma需要三个矩阵：表达矩阵（exp）、分组矩阵（design）、比较矩阵（contrast）
 suppressMessages(library(limma))
-# 设置分组信息
-group_list = rep(c("U251_FLAG","CBX6.5","CBX6.6"),each = 2)
-group_list=factor(group_list,levels = c("U251_FLAG","CBX6.5","CBX6.6"))
+# 设置分组信息(一个control两个treat组，需要分别比较 treat1-control 和 treat2-control)
+group_list = rep(c("control","treat1","treat2"),each = 2)
+group_list=factor(group_list,levels = c("control","treat1","treat2"))
 #先做一个分组矩阵～design，其中1代表“是”
 design <- model.matrix(~0+factor(group_list))
 colnames(design) <- levels(factor(group_list))
@@ -25,7 +25,7 @@ rownames(design) <- as.character(group_list)
 design
 #再做一个多组比较矩阵【一般是case比control】
 unique(group_list)
-contrast <- makeContrasts(contrasts=c("CBX6.5-U251_FLAG", "CBX6.6-U251_FLAG"),levels = design) 
+contrast <- makeContrasts(contrasts=c("treat1-control", "treat2-control"),levels = design) 
 contrast
 
 
@@ -42,11 +42,11 @@ DEG <- function(efilt,design,contrast,coef=1){
   return(deg_mtx)
 }
 
-CBX6.5_mtx <- DEG(exp,design,contrast,coef = 1) 
-CBX6.6_mtx <- DEG(exp,design,contrast,coef = 2) 
+trt1_mtx <- DEG(exp,design,contrast,coef = 1) 
+trt2_mtx <- DEG(exp,design,contrast,coef = 2) 
 
 ## 画图
-data <- CBX6.6_mtx
+data <- trt1_mtx
 library(ggrepel)
 library(ggplot2)
 data$gene <- rownames(data)
@@ -81,8 +81,8 @@ vol2 = ggplot(data=data, aes(x=logFC, y =-log10(P.Value),color =change)) +
   # 设置x、y轴坐标范围
   # xlim(-10,10)
 
-write.csv(data,file = "CBX6.6-U251_FLAG.csv")
-ggsave(vol2,filename = "CBX6.6-U251_FLAG.png")
+write.csv(data,file = "treat1-control.csv")
+ggsave(vol2,filename = "treat1-control.png")
 
 
 
